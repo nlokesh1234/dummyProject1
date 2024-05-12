@@ -1,0 +1,170 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Positioning</title>
+    <style>
+        .page_header {
+            background-color: rgb(162, 162, 192);
+            color: aliceblue;
+            text-align: center;
+            height: 500px;
+            overflow: hidden;
+        }
+
+        .page_header h1 {
+            position: absolute;
+            /* Absolute position the text over the image */
+            top: 30%;
+            /* Center vertically */
+            left: 50%;
+            /* Center horizontally */
+            transform: translate(-50%, -50%);
+            /* Adjust the centering to be exact */
+            color: white;
+            /* Text color */
+            font-size: 48px;
+            /* Text size */
+            font-weight: bold;
+            /* Make the font bold */
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+        }
+        .container {
+            display: flex;  /* Use flexbox to align children */
+            justify-content: center; /* Center children horizontally */
+            align-items: center; /* Center children vertically */
+            flex-wrap: wrap; /* Allow children to wrap */
+            padding: 10px; /* Padding around the container */
+        }
+
+        .card1 {
+            background-color: rgb(226, 158, 55);
+            /* size: 25%; */
+            width: 23%;
+            border: 1px solid black;
+            border-radius: 20px;
+            text-align: justify;
+            padding: 10px;
+            position: relative;
+            top: 10px;
+            display: inline-block;
+            /* flex-direction: row; */
+            margin-top: -8%;
+            margin-left: 4px;
+
+
+        }
+
+        .card2 {
+            background-color: rgb(139, 135, 127);
+            /* size: 25%; */
+            width: 23%;
+            border: 1px solid black;
+            border-radius: 20px;
+            text-align: justify;
+            padding: 10px;
+            position: relative;
+            /* top: 10px; */
+            display: inline-block;
+            /* margin-top: -10%; */
+            margin-top: 5%
+        }
+
+        .summary_card {
+            background-color: azure;
+            color: blue;
+            width: 100%;
+            border: 1px solid black;
+            position: relative;
+            top: 5%;
+            text-align: center;
+
+        }
+    </style>
+    <div class="page_header">
+
+        <h1>New Portal is here</h1>
+        <img
+            src="https://i0.wp.com/picjumbo.com/wp-content/uploads/nature-lover-green-heart-tree-free-photo.jpg?w=1500&quality=50">
+    </div>
+
+
+</head>
+
+<body>
+    <div class="container">
+        <div class="card1">
+            <h1
+                style="background-color: aliceblue;border: 1px solid black;border-radius: 20px; text-align: center;margin-top: 0px; position: relative;">
+                Name Title 1</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur esse quibusdam inventore quae delectus
+                nam, saepe ipsa corporis vitae provident ea, quas, a veritatis eum dolore architecto aspernatur
+                praesentium deleniti.</p>
+        </div>
+        <div class="card1">
+            <h1
+                style="background-color: aliceblue;border: 1px solid black; border-radius: 20px; text-align: center;margin-top: 0px;">
+                Name Title 2</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur esse quibusdam inventore quae delectus
+                nam, saepe ipsa corporis vitae provident ea, quas, a veritatis eum dolore architecto aspernatur
+                praesentium deleniti.</p>
+        </div>
+        <div class="card1">
+            <h1
+                style="background-color: aliceblue;border: 1px solid black; border-radius: 20px; text-align: center;margin-top: 0px;">
+                Name Title 3</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur esse quibusdam inventore quae delectus
+                nam, saepe ipsa corporis vitae provident ea, quas, a veritatis eum dolore architecto aspernatur
+                praesentium deleniti.</p>
+        </div>
+        <div class="card1">
+            <h1
+                style="background-color: aliceblue;border: 1px solid black; border-radius: 20px; text-align: center;margin-top: 0px;">
+                Name Title 4</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur esse quibusdam inventore quae delectus
+                nam, saepe ipsa corporis vitae provident ea, quas, a veritatis eum dolore architecto aspernatur
+                praesentium deleniti.</p>
+        </div>
+    </div>
+    <div></div>
+    <div class="summary_card">
+        <h1>Summary of all cards</h1>
+    </div>
+    <div class="card2">
+        <h1
+            style="background-color: aliceblue;border: 1px solid black; border-radius: 20px; text-align: center;margin-top: 0px; position: relative;">
+            Summary Name Title 1</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur esse quibusdam inventore quae delectus nam,
+            saepe ipsa corporis vitae provident ea, quas, a veritatis eum dolore architecto aspernatur praesentium
+            deleniti.</p>
+    </div>
+    <div class="card2">
+        <h1
+            style="background-color: aliceblue;border: 1px solid black; border-radius: 20px; text-align: center;margin-top: 0px;">
+            Summary Name Title 2</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur esse quibusdam inventore quae delectus nam,
+            saepe ipsa corporis vitae provident ea, quas, a veritatis eum dolore architecto aspernatur praesentium
+            deleniti.</p>
+    </div>
+    <div class="card2">
+        <h1
+            style="background-color: aliceblue;border: 1px solid black; border-radius: 20px; text-align: center;margin-top: 0px;">
+            Summary Name Title 3</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur esse quibusdam inventore quae delectus nam,
+            saepe ipsa corporis vitae provident ea, quas, a veritatis eum dolore architecto aspernatur praesentium
+            deleniti.</p>
+    </div>
+    <div class="card2">
+        <h1
+            style="background-color: aliceblue;border: 1px solid black; border-radius: 20px; text-align: center;margin-top: 0px;">
+            Summary Name Title 4</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur esse quibusdam inventore quae delectus nam,
+            saepe ipsa corporis vitae provident ea, quas, a veritatis eum dolore architecto aspernatur praesentium
+            deleniti.</p>
+    </div>
+    </div>
+
+</body>
+
+</html>
